@@ -1,0 +1,50 @@
+.profile_pic{
+    height: 50px;
+    width: 50px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+.nav-bg{
+    background-color: #40513B;
+}
+.max-w-73p{
+    max-width: 70%;
+}
+.nav-item-style {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: #EDF1D6;
+}
+.body {
+    padding: 3vw 6vw;
+}
+.mynav{
+    padding-top: 1vw;
+    /* padding-bottom: 2vw; */
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+@media(min-width: 576px){
+    .nav-item-style {
+        font-size: 2.7vw;
+    }
+}
+@media(min-width: 768px){
+    .nav-item-style {
+        font-size: 3vw;
+    }
+}
+@media(min-width: 992px){
+    .max-w-73p{
+        max-width: 40%;
+    }
+    .nav-item-style {
+        font-size: 1.7vw;
+    }
+    #navbarNav{
+        max-width: 50%;
+    }
+} 
+
+
+

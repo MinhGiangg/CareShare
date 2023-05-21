@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="dashboard.css" />
         <link rel="stylesheet" href="navbar.css" />
         <link rel="stylesheet" href="footer.css" />
+        <!-- <script src="dashboard.js"></script> -->
+        <script src="images.js"></script>
     </head>
     <body>
         <nav
@@ -59,13 +61,16 @@
                             >Home</a
                         >
                         <a
-                            href="projects.html"
+                            href="aboutus.html"
                             class="nav-item nav-link nav-item-style text-center"
                             >About Us</a
                         >
                         <a href="profile.html"
-                            ><div class="nav-item profile_pic"></div
-                        ></a>
+                            ><img
+                                src="profile.png"
+                                alt="profile"
+                                class="profile_pic"
+                        /></a>
                     </div>
                 </div>
             </div>
@@ -108,21 +113,47 @@
                         </div>
                     </form>
                     <div class="container-fluid">
-                        <div class="row d-flex justify-content-between">
+                        <div class="row d-flex justify-content-start">
                             <span class="header2">Verified NPO's near you</span>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
+                            <div class="col-2" id="listing1"></div>
+                            <div class="col-2" id="listing2"></div>
+                            <div class="col-2" id="listing3"></div>
+                        </div>
+                        <div class="row d-flex justify-content-start">
+                            <div class="col-2" id="listing1_header">
+                                Aggie Reuse
+                            </div>
+                            <div class="col-2" id="listing2_header">
+                                ASUCD Pantry
+                            </div>
+                            <div class="col-2" id="listing3_header">
+                                Aggie Compost
+                            </div>
                         </div>
                         <div class="row d-flex justify-content-between">
                             <span class="header2">New listings near you</span>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
-                            <div class="col-2 listing"></div>
+                            <div class="col-2" id="listing4"></div>
+                            <div class="col-2" id="listing5"></div>
+                            <div class="col-2" id="listing6"></div>
+                            <div class="col-2" id="listing7"></div>
+                            <div class="col-2" id="listing8"></div>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-2" id="listing4_header">
+                                Black Jacket
+                            </div>
+                            <div class="col-2" id="listing5_header">
+                                White Shoes
+                            </div>
+                            <div class="col-2" id="listing6_header">
+                                Blue Cap
+                            </div>
+                            <div class="col-2" id="listing7_header">
+                                Grey Chair
+                            </div>
+                            <div class="col-2" id="listing8_header">
+                                Vintage Clock
+                            </div>
                         </div>
                     </div>
                 </div>

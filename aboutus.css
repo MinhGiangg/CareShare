@@ -1,0 +1,19 @@
+.opening-aboutus{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.8em;
+    margin-top: 0.7em;
+    margin-bottom: 0.4em;
+}
+.text-aboutus{
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-left: 9em;
+    margin-right: 9em;
+}
+.image-aboutus{
+    margin-top: 2em;
+}

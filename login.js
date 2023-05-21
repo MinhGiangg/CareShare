@@ -6,7 +6,7 @@ const path = require('path');
 const connection = mysql.createConnection({
 	host     : 'localhost',
 	user     : 'root',
-	password : '',
+	password : 'CareShare',
 	database : 'nodelogin'
 });
 
@@ -26,7 +26,7 @@ app.get('/', function(request, response) {
 	// Render login template
 	response.sendFile(path.join(__dirname + '/login.html'));
 });
-
+app.use(express.static(path.join(__dirname, 'public')));
 // http://localhost:3000/auth
 app.post('/auth', function(request, response) {
 	// Capture the input fields
@@ -44,7 +44,7 @@ app.post('/auth', function(request, response) {
 				request.session.loggedin = true;
 				request.session.username = username;
 				// Redirect to home page
-				response.redirect('/dashboard.html');
+				response.redirect('http://127.0.0.1:5503/dashboard.html');
 			} else {
 				response.send('Incorrect Username and/or Password!');
 			}			
@@ -57,12 +57,12 @@ app.post('/auth', function(request, response) {
 });
 
 // http://localhost:3000/home
-app.get('/dashboard', function(request, response) {
+app.get('http://127.0.0.1:5504/dashboard.html', function(request, response) {
 	// If the user is loggedin
 	if (request.session.loggedin) {
 		// Output username
 		// response.send('Welcome back, ' + request.session.username + '!');
-		response.redirect('/dashboard.html');
+		response.redirect('http://127.0.0.1:5504/dashboard.html');
 	} else {
 		// Not logged in
 		response.send('Please login to view this page!');

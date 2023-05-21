@@ -1,0 +1,12 @@
+body{
+    background-color: #EDF1D6;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.enter_button{
+    background-color: green;
+    width: 10px;
+    height: 20px;
+}

@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 const connection = mysql.createConnection({
     host     : 'localhost',
 	user     : 'root',
-	password : 'Dickbutt0-0!',
+	password : 'CareShare',
 	database : 'nodelogin'
 });
 

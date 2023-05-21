@@ -5,12 +5,14 @@ fetch('http://localhost:5503/')
     // Handle the response data
       console.log("Hello!");
       console.log(data);
-      for (let i = 1; i < data.length + 1; i++){
+    for (let i = 1; i < data.length + 1; i++){
+      if (i != 3) {
         let element = document.getElementById(`listing${i}`);
         element.style.backgroundImage = `url(${data[i - 1]})`;
         element.style.backgroundSize = "cover";
         console.log(i);
         console.log(data[i]);
+      }
       };
   })
   .catch(error => {

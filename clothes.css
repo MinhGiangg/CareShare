@@ -1,0 +1,31 @@
+.clothes{
+    padding-bottom: 3.7em;
+}
+.listing{
+    height: 175px;
+    background-color: #EDF1D6;
+    border-radius: 15px;
+    border: solid #c3dbbb 7px;
+    margin-left: 2vw;
+}
+.header_listing{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+.clothe1{
+    background-image: url('img_clothes/clothe1.png');
+    background-size: cover;
+}
+.clothe2{
+    background-image: url('img_clothes/clothe2.png');
+    background-size: cover;
+}
+.clothe3{
+    background-image: url('img_clothes/clothe3.png');
+    background-size: cover;
+}
+.footer{
+    margin-top: 24vh;
+    background-color: #40513B;
+}

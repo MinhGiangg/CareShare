@@ -7,10 +7,12 @@ body{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
-    font-size: 2.7em;
+    font-size: 2em;
     color: #EDF1D6;
     background-color: #40513B;
     margin-top: 2.5em;
+    margin-left: 0.5em;
+    margin-right: 2em;
     border-radius: 0.5em;
 }
 .departments-items{
@@ -18,29 +20,30 @@ body{
     padding-left: 1vh;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 200;
-    font-size: 2em;
+    font-size: 1.5em;
     border-bottom: solid 1px black;
+    margin-right: 1.5em;
 }
 .search-form{
     padding-top: 4vh;
 }
 #input_area{
-    width: 25em;
-    height: 4em;
+    width: 20em;
+    height: 3.5em;
     background-color: #EDF1D6;
     border-radius: 10px;
     border-color: #40513B;
 
 }
 #search-button{
-    height: 4em;
-    width: 4em;
+    height: 3.5em;
+    width: 3.5em;
     background-color: #40513B;
     border-radius: 10px;
 }
 .listing{
     /* margin-left: 2em; */
-    height: 200px;
+    height: 175px;
     background-color: #EDF1D6;
     border: solid #40513B 1px;
     margin-top: 1em;
@@ -51,4 +54,14 @@ body{
     font-weight: 400;
     font-size: 1.5em;
     color: #40513B;
+}
+.departments-items:hover{
+    background-color: #e0e8b5;
+}
+.departments-items:active{
+    font-weight: 500;
+}
+#clothes_link{
+    text-decoration: none;
+    color: inherit;
 }

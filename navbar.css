@@ -13,13 +13,17 @@
 .nav-item-style {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
+    font-size: 1.2em;
     color: #EDF1D6;
+}
+.nav-item-style:hover {
+    color: grey;
 }
 .body {
     padding: 3vw 6vw;
 }
 .mynav{
-    padding-top: 1vw;
+    /* padding-top: 1vw; */
     /* padding-bottom: 2vw; */
     padding-left: 1vw;
     padding-right: 1vw;

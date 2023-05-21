@@ -1,0 +1,45 @@
+body{
+    background-color: #EDF1D6;
+}
+.departments{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.7em;
+    color: #EDF1D6;
+    background-color: #40513B;
+    margin-top: 2.5em;
+    border-radius: 0.5em;
+}
+.departments-items{
+    padding-top: 1.2vh;
+    padding-left: 1vh;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    border-bottom: solid 1px black;
+}
+.search-form{
+    padding-top: 4vh;
+}
+#input_area{
+    width: 25em;
+    height: 4em;
+    background-color: #EDF1D6;
+    border-radius: 10px;
+    border-color: #40513B;
+
+}
+#search-button{
+    height: 4em;
+    width: 4em;
+    background-color: #40513B;
+    border-radius: 10px;
+}
+.listing{
+    /* margin-left: 2em; */
+    height: 200px;
+    background-color: #D9D9D9;
+}

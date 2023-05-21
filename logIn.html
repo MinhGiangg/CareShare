@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="logIn.css" />
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="logIn.css" />
+    </head>
+    <body>
+        <div id="id01">
+            <form
+                class="modal-content animate"
+                action="/logIn.js"
+                method="post"
+                onsubmit="sendData(event)"
+            >
+                <div class="imgcontainer">
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+                </div>
 
-</head>
-<body>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input
+                        type="text"
+                        placeholder="Enter Username"
+                        name="uname"
+                        required
+                    />
 
+                    <label for="psw"><b>Password</b></label>
+                    <input
+                        type="password"
+                        placeholder="Enter Password"
+                        name="psw"
+                        required
+                    />
 
-<div id="id01" >
-  
-  <form class="modal-content animate" action="/logIn.js" method="post" onsubmit="sendData(event)">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+                    <button type="submit">Login</button>
+                </div>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+                <div class="container">
+                    <button
+                        type="button"
+                        onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn"
+                    >
+                        Sign Up
+                    </button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      
-    </div>
+        <script>
+            function sendData(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
 
-    <div class="container" >
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Sign Up</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+                // Get the form data
+                const form = event.target;
+                const formData = new FormData(form);
 
-<script>
-  function sendData(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+                // Create an object from the form data
+                const data = {};
+                for (let [name, value] of formData) {
+                    data[name] = value;
+                }
 
-    // Get the form data
-    const form = event.target;
-    const formData = new FormData(form);
-
-    // Create an object from the form data
-    const data = {};
-    for (let [name, value] of formData) {
-      data[name] = value;
-    }
-
-    // Send the data to the backend
-    fetch(form.action, {
-      method: form.method,
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => {
-      // Handle the response from the backend
-      // ...
-    })
-    .catch(error => {
-      // Handle any errors
-      // ...
-    });
-  }
-</script>
-
-</body>
+                // Send the data to the backend
+                fetch(form.action, {
+                    method: form.method,
+                    body: JSON.stringify(data),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then((response) => {
+                        // Handle the response from the backend
+                        // ...
+                    })
+                    .catch((error) => {
+                        // Handle any errors
+                        // ...
+                    });
+            }
+        </script>
+    </body>
 </html>

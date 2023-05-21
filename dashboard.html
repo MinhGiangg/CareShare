@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="dashboard.css" />
+        <link rel="stylesheet" href="navbar.css" />
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-lg nav-bg nav-font-color sticky-top m-0 mynav"
+        >
+            <div class="container-fluid">
+                <a class="navbar-brand max-w-73p" href="#">
+                    <!-- should go back to home page -->
+                    <img
+                        class="img-fluid logo"
+                        src="careshare.png"
+                        alt="gdsc_logo"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler image-fluid toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    ara-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div
+                        class="navbar-nav d-flex container-fluid justify-content-between"
+                    >
+                        <a
+                            href="firstpage.html"
+                            class="nav-item nav-link nav-item-style text-center"
+                            >Donate Now</a
+                        >
+                        <a
+                            href="index.html"
+                            class="nav-item nav-link nav-item-style text-center"
+                            >Home</a
+                        >
+                        <a
+                            href="projects.html"
+                            class="nav-item nav-link nav-item-style text-center"
+                            >About Us</a
+                        >
+                        <div class="nav-item profile_pic"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END OF NAV -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 border">
+                    <div class="departments border">Departments</div>
+                    <div class="departments-items">Clothes</div>
+                    <div class="departments-items">Furniture</div>
+                    <div class="departments-items">Kitchen Essentials</div>
+                    <div class="departments-items">Home Essentials</div>
+                    <div class="departments-items">Home Electrics</div>
+                    <div class="departments-items">Pantry Food</div>
+                </div>
+                <div class="col-9 border">
+                    <form action="#" method="get" class="search">
+                        <div
+                            class="container-fluid d-flex justify-content-center"
+                        >
+                            <div class="search-form">
+                                <input
+                                    type="text"
+                                    name="item"
+                                    id="input_area"
+                                    required
+                                />
+                                <button id="search-button" type="submit">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass fa-2xl"
+                                        style="color: #edf1d6"
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="container-fluid">
+                        <div class="row border d-flex justify-content-between">
+                            <span>Verified NPO's near you</span>
+                            <div class="col-2 border listing"></div>
+                            <div class="col-2 border listing"></div>
+                            <div class="col-2 border listing"></div>
+                            <div class="col-2 border listing"></div>
+                            <div class="col-2 border listing"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://kit.fontawesome.com/bd31144920.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
